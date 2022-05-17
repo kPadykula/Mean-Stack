@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form [formGroup]="form" (submit)="onSignup()" *ngIf="!isLoading">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        formControlName="name"
+        placeholder="Name">
+      <mat-error *ngIf="form.get('name')?.invalid">Please enter your name</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        formControlName="surname"
+        placeholder="Surname">
+      <mat-error *ngIf="form.get('surname')?.invalid">Please enter your surname</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="email"
+        formControlName="email"
+        placeholder="Email">
+      <mat-error *ngIf="form.get('email')?.invalid">Please enter a valid email</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="password"
+        formControlName="password1"
+        placeholder="Password">
+      <mat-error *ngIf="form.get('password1')?.invalid">
+      </mat-error>
+    </mat-form-field>
+    <div
+      class="passList"
+      *ngIf="showPasswordReq">
+      Password have to fulfil those conditions:
+      <ul>
+        <li>Min length: 8</li>
+        <li>Capital letter: 1</li>
+        <li>Number: 1</li>
+        <li>Special char: 1</li>
+      </ul>
+    </div>
+    <button
+      mat-raised-button
+      type="submit">
+      Signup
+    </button>
+  </form>
+</mat-card>

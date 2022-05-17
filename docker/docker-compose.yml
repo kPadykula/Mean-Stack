@@ -1,0 +1,17 @@
+version: '3.0'
+
+services:
+  frontend:
+    hostname: localhost
+    build:
+      context: ../FrontEnd/
+      dockerfile: ../FrontEnd/Dockerfile
+    ports:
+      - 8080:80
+
+  api:
+    build:
+      context: ../backend/
+      dockerfile: ../backend/Dockerfile
+    ports:
+      - "3000:3000"

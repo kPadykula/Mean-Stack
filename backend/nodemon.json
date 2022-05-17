@@ -1,0 +1,14 @@
+{
+  "env": {
+    "MONGO_ATLAS_DB_NAME": "DB_NAME",
+    "MONGO_ATLAS_USER": "DB_USER",
+    "MONGO_ATLAS_PW": "PASSWORD_TO_DB",
+    "JWT_KEY": "SECRET_KEY_FOR_TOKEN",
+    "PORT": "3000",
+    "BASE_URL": "http://localhost:8080",
+    "SERVICE": "gmail",
+    "PASS": "YOUR_EMAIL_PASSWORD",
+    "USER": "YOUR_EMAIL",
+    "HOST": "smtp.gmail.com"
+  }
+}

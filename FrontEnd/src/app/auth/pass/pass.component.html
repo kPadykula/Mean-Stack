@@ -1,0 +1,26 @@
+<mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form (submit)="onReset(resetFrom)" #resetFrom="ngForm" *ngIf="!isLoading">
+    <p>Please input your email to reset password.</p>
+    <mat-form-field>
+      <input
+        ngModel
+        matInput
+        type="email"
+        name="email"
+        #emailInput="ngModel"
+        required
+        email
+        placeholder="E-Mail">
+      <mat-error
+        *ngIf="emailInput.invalid">
+        Please enter a valid email.
+      </mat-error>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      type="submit">
+      Reset
+    </button>
+  </form>
+</mat-card>
