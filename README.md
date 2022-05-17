@@ -20,7 +20,9 @@ I also implement some additional features like:
 
 Before you run applications you have to edit `nodemon.json`
 
-And also generate your own ssl key and cert to run with https
+And also generate your own ssl key and cert to run with https 
+[Link](https://github.com/RubenVermeulen/generate-trusted-ssl-certificate "SSL generator")
+
 ```json lines
     "env": {
         "MONGO_ATLAS_DB_NAME": "DB_NAME",
