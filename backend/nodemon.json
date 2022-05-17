@@ -5,7 +5,7 @@
     "MONGO_ATLAS_PW": "PASSWORD_TO_DB",
     "JWT_KEY": "SECRET_KEY_FOR_TOKEN",
     "PORT": "3000",
-    "BASE_URL": "http://localhost:8080",
+    "BASE_URL": "https://localhost:8080",
     "SERVICE": "gmail",
     "PASS": "YOUR_EMAIL_PASSWORD",
     "USER": "YOUR_EMAIL",
